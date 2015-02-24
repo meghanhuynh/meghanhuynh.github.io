@@ -36,13 +36,14 @@
     
     <h2><center>Servers</center></h2>
     <p><font size="5"><div style="margin-left: 10em;">
-    Dropbox uses Amazon’s EC2/S3 for storing and serving file blocks, 
-    in addition to SQS and Route 53. There are also large data centers to 
-    manage ten thousand physical servers that store and serve metadata for 
-    the billions of files Dropbox saves every day. User Metadata is stored 
-    in the data centers while the files are transferred to the Amazon simple 
-    storage service (S3). Amazon EC2 allows the data centers to communicate 
-    with the S3 cloud storage.</div></font></p>
+    Dropbox uses Amazon web services such as elastic compute cloud (EC2), 
+    simple storage service (S3), simple queue service (SQS) and domain name system 
+    (Route 53). Amazon EC2 and S3 are used for storing and serving file blocks, 
+    where EC2 allows the data centers to communicate with the S3. There are also large 
+    data centers to manage ten thousand physical servers that store and serve metadata 
+    for the billions of files Dropbox saves every day. User Metadata is stored in the 
+    data centers while the files are transferred to the Amazon S3. Below is an illustration 
+    of how Dropbox services its clients. </div></font></p>
     
     <br>
     

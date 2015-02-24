@@ -19,7 +19,7 @@
     </blockquote></font></i></center>
     
     <h2><center>Language</center></h2>
-    <p><center><font size="5">Dropbox uses a mixed coding environment of Python and C code. 
+    <p><font size="5">Dropbox uses a mixed coding environment of Python and C code. 
     Python is primarily used in their server backend desktop client, 
     website controller logic, API backend, and analytics. 
     Python allows Dropbox to run on a single code base which allows 
@@ -29,16 +29,16 @@
     Scripting languages like Python are not intended to manage memory directly 
     so the code may cause memory fragmentation and inefficient use of memory. 
     Dropbox’s solution to the memory problem was to create a custom allocator 
-    in C that would free memory for future storage. </font></center></p>
+    in C that would free memory for future storage. </font></p>
     
     <h2><center>Servers</center></h2>
-    <p><center><font size="5">Dropbox uses Amazon’s EC2/S3 for storing and serving file blocks, 
+    <p><font size="5">Dropbox uses Amazon’s EC2/S3 for storing and serving file blocks, 
     in addition to SQS and Route 53. There are also large data centers to 
     manage ten thousand physical servers that store and serve metadata for 
     the billions of files Dropbox saves every day. User Metadata is stored 
     in the data centers while the files are transferred to the Amazon simple 
     storage service (S3). Amazon EC2 allows the data centers to communicate 
-    with the S3 cloud storage.</font></center></p>
+    with the S3 cloud storage.</font></p>
     
     <br>
     
@@ -48,7 +48,7 @@
     <br>
     
     <h2><center>Security</center></h2>
-    <p><center><font size="5">Dropbox has multiple layers of protections: secure data transfer, 
+    <p><font size="5">Dropbox has multiple layers of protections: secure data transfer, 
     encryption, network configuration and application and user level controls. 
     To protect moving file data, Dropbox uses SSL/TLS for file transfer, creating 
     a secure tunnel protected by 128-bit or higher AES encryption. Dropbox file 
@@ -57,7 +57,7 @@
     flags all authentication cookies as secure, and enable HSTS. Dropbox also 
     provides a technology called LAN sync, which allows computers on a local area 
     network to securely download files locally from each other instead of always 
-    hitting the central servers.</font></center></p>
+    hitting the central servers.</font></p>
     
     <h2><center>Future & Open Source Code</center></h2>
     <p><font size="5">Dropbox is constantly working to improve service for its users and to become  

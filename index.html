@@ -27,8 +27,38 @@
     in C that would free memory for future storage. </p>
     
     <h2>Servers</h2>
+    <p>Dropbox uses Amazon’s EC2/S3 for storing and serving file blocks, 
+    in addition to SQS and Route 53. There are also large data centers to 
+    manage ten thousand physical servers that store and serve metadata for 
+    the billions of files Dropbox saves every day. User Metadata is stored 
+    in the data centers while the files are transferred to the Amazon simple 
+    storage service (S3). Amazon EC2 allows the data centers to communicate 
+    with the S3 cloud storage. </p>
+    
     <h2>Security</h2>
+    <p>Dropbox has multiple layers of protections: secure data transfer, 
+    encryption, network configuration and application and user level controls. 
+    To protect moving file data, Dropbox uses SSL/TLS for file transfer, creating 
+    a secure tunnel protected by 128-bit or higher AES encryption. Dropbox file 
+    data is stored in discrete file blocks that are fragmented and encrypted using 
+    256-bit AES. Two-step verification is also available for login security and 
+    flags all authentication cookies as secure, and enable HSTS. Dropbox also 
+    provides a technology called LAN sync, which allows computers on a local area 
+    network to securely download files locally from each other instead of always 
+    hitting the central servers.</p>
+    
     <h2>Future and Open Source Code</h2>
+    <p>Dropbox utilizes simple, frequently used technologies for all of their 
+    implementation in order to use previous resources to solve problems. Dropbox 
+    is constantly working to improve service for its users and to become more 
+    accessible on multiple platforms. It has developed custom code to manage memory 
+    with a Python and C coded environment. Most of their developing projects can be 
+    found online through open source code. 
+            Streaming file synchronization – improving the speed of syncing across devices by 2x. 
+            Pyston – JIT-based python implementation to push python into domains dominated by 
+            traditional system languages like C++. Python is relatively new compared to languages 
+            like C++ so conversion make it possible for a variety of older systems to support Dropbox. 
+    </p>
     
     <h2>Sources</h2>
     

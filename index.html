@@ -8,7 +8,7 @@
     <title>Meghan Huynh Technology Report</title>
   </head>
   <body>
-    <h1><center>Thinking Outside the Dropbox</center></h1>
+    <h1><center>Inside Dropbox</center></h1>
     <h2><center>Written by Meghan Huynh</center></h2>
     
     <center><i><blockquote cite="https://www.dropbox.com/about">
@@ -20,7 +20,7 @@
     </center></i></blockquote>
     
     <h2><center>Backend</center></h2>
-    <p>Dropbox uses a mixed coding environment of Python and C code. 
+    <p><center>Dropbox uses a mixed coding environment of Python and C code. 
     Python is primarily used in their server backend desktop client, 
     website controller logic, API backend, and analytics. 
     Python allows Dropbox to run on a single code base which allows 
@@ -30,21 +30,21 @@
     Scripting languages like Python are not intended to manage memory directly 
     so the code may cause memory fragmentation and inefficient use of memory. 
     Dropbox’s solution to the memory problem was to create a custom allocator 
-    in C that would free memory for future storage. </p>
+    in C that would free memory for future storage. </center></p>
     
     <h2><center>Servers</center></h2>
-    <p>Dropbox uses Amazon’s EC2/S3 for storing and serving file blocks, 
+    <p><center>Dropbox uses Amazon’s EC2/S3 for storing and serving file blocks, 
     in addition to SQS and Route 53. There are also large data centers to 
     manage ten thousand physical servers that store and serve metadata for 
     the billions of files Dropbox saves every day. User Metadata is stored 
     in the data centers while the files are transferred to the Amazon simple 
     storage service (S3). Amazon EC2 allows the data centers to communicate 
-    with the S3 cloud storage. </p>
+    with the S3 cloud storage.</center></p>
     
-    <img src="img/data_vis_v3.png" alt="Dropbox Data Management"/>
+    <center><img src="img/data_vis_v3.png" alt="Dropbox Data Management"/></center>
     
     <h2><center>Security</center></h2>
-    <p>Dropbox has multiple layers of protections: secure data transfer, 
+    <p><center>Dropbox has multiple layers of protections: secure data transfer, 
     encryption, network configuration and application and user level controls. 
     To protect moving file data, Dropbox uses SSL/TLS for file transfer, creating 
     a secure tunnel protected by 128-bit or higher AES encryption. Dropbox file 
@@ -53,10 +53,10 @@
     flags all authentication cookies as secure, and enable HSTS. Dropbox also 
     provides a technology called LAN sync, which allows computers on a local area 
     network to securely download files locally from each other instead of always 
-    hitting the central servers.</p>
+    hitting the central servers.</center></p>
     
     <h2><center>Future & Open Source Code</center></h2>
-    <p>Dropbox utilizes simple, frequently used technologies for all of their 
+    <p><center>Dropbox utilizes simple, frequently used technologies for all of their 
     implementation in order to use previous resources to solve problems. Dropbox 
     is constantly working to improve service for its users and to become more 
     accessible on multiple platforms. It has developed custom code to manage memory 
@@ -66,14 +66,14 @@
             Pyston – JIT-based python implementation to push python into domains dominated by 
             traditional system languages like C++. Python is relatively new compared to languages 
             like C++ so conversion make it possible for a variety of older systems to support Dropbox. 
-    </p>
+    </center></p>
     
     <h2><center>Sources</center></h2>
-    <p>https://www.dropbox.com/about 
+    <p><center>https://www.dropbox.com/about 
       https://blogs.dropbox.com/tech/2014/12/aws-reinvent-2014/
       https://www.dropbox.com/security#protection
       https://blogs.dropbox.com/tech/category/open-source/
-    </p>
+    </center></p>
     
   </body>
 </html>

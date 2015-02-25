@@ -22,28 +22,27 @@
     
     <h2><center>Language</center></h2>
     <p><font size="5"><div style="margin-left: 10em;">
-    Dropbox uses a mixed coding environment of Python and C code. 
-    Python is primarily used in their server backend desktop client, 
-    website controller logic, API backend, and analytics. 
-    Python allows Dropbox to run on a single code base which allows 
-    Dropbox to run on popular operating systems such as Windows, 
-    Mac, and Linux. While the simplicity and ease of learning of 
-    Python helps Dropbox attract more developers, it comes with a few problems. 
-    Scripting languages like Python are not intended to manage memory directly 
-    so the code may cause memory fragmentation and inefficient use of memory. 
-    Dropbox’s solution to the memory problem was to create a custom allocator 
-    in C that would free memory for future storage. </div></font></p>
+    Dropbox implements their services with a mixture of Python and C code. 
+    Python is primarily used in their server backend desktop client, website 
+    controller logic, API backend, and analytics. Python allows Dropbox to 
+    run on a single code base which allows Dropbox to run on popular operating 
+    systems such as Windows, Mac, and Linux. While Python is one of the simpler 
+    languages and fairly easy to learn, it comes with a few problems. Scripting 
+    languages like Python are not intended to manage memory directly so the code
+    can cause memory fragmentation and inefficient use of memory. To improve 
+    memory usage that users depend on, Dropbox created a custom allocator that 
+    would free memory for future storage.  </div></font></p>
     
     <h2><center>Servers</center></h2>
     <p><font size="5"><div style="margin-left: 10em;">
-    Dropbox uses Amazon web services such as elastic compute cloud (EC2), 
-    simple storage service (S3), simple queue service (SQS) and domain name system 
-    (Route 53). Amazon EC2 and S3 are used for storing and serving file blocks, 
-    where EC2 allows the data centers to communicate with the S3. There are also large 
-    data centers to manage ten thousand physical servers that store and serve metadata 
-    for the billions of files Dropbox saves every day. User Metadata is stored in the 
-    data centers while the files are transferred to the Amazon S3. Below is an illustration 
-    of how Dropbox services its clients. </div></font></p>
+    Dropbox uses Amazon web services such as elastic compute cloud (EC2), simple 
+    storage service (S3), simple queue service (SQS) and domain name system (Route 53). 
+    Amazon EC2 and S3 are used for storing and serving file blocks, where EC2 allows 
+    the data centers to communicate with the S3. There are also large data centers to 
+    manage ten thousand physical servers that store and serve metadata for the billions 
+    of files Dropbox saves every day. The metadata is stored in the data centers while 
+    the files are transferred to the Amazon S3. Below is an illustration of how Dropbox
+    services its clients. </div></font></p>
     
     <br>
     
@@ -54,31 +53,27 @@
     
     <h2><center>Security</center></h2>
     <p><font size="5"><div style="margin-left: 10em;">
-    Dropbox has multiple layers of protections: secure data transfer, 
-    encryption, network configuration and application and user level controls. 
-    To protect moving file data, Dropbox uses SSL/TLS for file transfer, creating 
-    a secure tunnel protected by 128-bit or higher AES encryption. Dropbox file 
-    data is stored in discrete file blocks that are fragmented and encrypted using 
-    256-bit AES. Two-step verification is also available for login security and 
-    flags all authentication cookies as secure, and enable HSTS. Dropbox also 
-    provides a technology called LAN sync, which allows computers on a local area 
-    network to securely download files locally from each other instead of always 
-    hitting the central servers.</div></font></p>
+    Dropbox has multiple layers of protections: secure data transfer, encryption, network
+    configuration and application and user level controls. To protect moving file data, 
+    Dropbox uses SSL/TLS for file transfer, creating a secure tunnel protected by 128-bit 
+    or higher AES encryption. Dropbox file data is stored in discrete file blocks that are 
+    fragmented and encrypted using 256-bit AES. Two-step verification is also available for
+    users to protect themselves at login through time-based one-time password (TOTP) applications.
+    Dropbox also provides a technology called LAN sync, which allows computers on a local area 
+    network to securely download files locally from each other instead of having to contact the 
+    central servers.</div></font></p>
     
     <h2><center>Future & Open Source Code</center></h2>
     <p><font size="5"><div style="margin-left: 10em;">
-    Dropbox is constantly working to improve service for its users and to become  
-    accessible on all devices. It has developed custom code to manage memory 
-    with a Python and C coded environment. Most of their developing projects can be 
-    found online through open source code. 
-    <ul>
-        <b><a href="https://blogs.dropbox.com/tech/2014/07/streaming-file-synchronization/">Streaming file synchronization</a></b> 
-            – improving the speed of syncing across devices by 2x. 
-        <br><b><a href="https://blogs.dropbox.com/tech/2014/04/introducing-pyston-an-upcoming-jit-based-python-implementation/">Pyston</a></b> 
-            – JIT-based python implementation to push python into domains dominated by 
-            traditional system languages like C++. <br> Python is relatively new compared to languages 
-            like C++ so conversion make it possible for a variety of older systems to support Dropbox.
-    </ul> 
+    Dropbox is constantly working to improve service for its users, from becoming more memory 
+    efficient to becoming more accessible. It has developed custom code to manage memory with a Python 
+    and C coded environment and has implemented their own LAN sync service to speed up user syncing. 
+    Employees at Dropbox are increasing the speed even further through streaming file synchronization 
+    which is estimated to double the speed of syncing across devices. This type of syncing will become
+    very important as Dropbox expands its service across devices. Currently, Dropbox is working on a 
+    JIT-based Python implementation, called Pyston, to support domains dominated by traditional system 
+    languages like C++. More details can be found in their Github open source code along with already 
+    used software for their multiple platform applications.  
     </div></font></p>
     
     <h2><center>Sources</center></h2>

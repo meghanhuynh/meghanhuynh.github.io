@@ -71,8 +71,9 @@
     and C coded environment and has implemented their own LAN sync service to speed up user syncing. 
     Employees at Dropbox are increasing the speed even further through 
      <a href="https://blogs.dropbox.com/tech/2014/07/streaming-file-synchronization/"> streaming file synchronization </a>
-    which is estimated to double the speed of syncing across devices. This type of syncing will become
-    very important as Dropbox expands its service across devices. Currently, Dropbox is working on a 
+    which allows file contents to “stream” through Dropbox servers between user clients and is estimated 
+    to double the speed of syncing across devices. This type of syncing will become very important as 
+    Dropbox expands its service across devices. Currently, Dropbox is working on a 
     JIT-based Python implementation, called 
     <a href="http://blog.pyston.org/"> Pyston</a>, to support domains dominated by traditional system 
     languages like C++. More details can be found in their 
